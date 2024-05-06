@@ -1,7 +1,7 @@
 <template>
     <p class="text-3xl pb-5 pt-10 font-semibold text-center">Our History</p>
-    <div class="w-full flex justify-center">
-        <div class="p-5">
+    <div class="w-full flex xl:flex-row flex-col-reverse justify-center">
+        <div class="p-5 self-center xl:self-auto">
             <img src="../../public/OUR-HISTORY.png" alt="">
         </div>
         <div class="flex flex-col gap-5 justify-center p-5 max-w-4xl place-self-center text-justify">

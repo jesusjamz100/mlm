@@ -11,16 +11,22 @@ library.add(faEnvelope, faLinkedin, faFacebook)
 <template>
     <div class="w-full flex justify-center bg-blue-900 px-8 py-1 gap-5">
         <div class="flex gap-2 items-center text-white text-lg">
-            <font-awesome-icon :icon="['fas', 'envelope']" />
-            <a href="mailto:info@mlmetaleng.com">info@mlmetaleng.com</a>
+            <a href="mailto:info@mlmetaleng.com" >
+                <font-awesome-icon :icon="['fas', 'envelope']" />
+                <p class="hidden sm:inline"> contact@mlmetaleng.com</p>
+            </a>
         </div>
         <div class="flex gap-2 items-center text-white text-lg">
-            <font-awesome-icon :icon="['fab', 'facebook']" />
-            <a href="#">/mlmetaleng</a>
+            <a href="#" >
+                <font-awesome-icon :icon="['fab', 'facebook']" />
+                <p href="#" class="hidden sm:inline"> /mlmetaleng</p>
+            </a>
         </div>
         <div class="flex gap-2 items-center text-white text-lg">
-            <font-awesome-icon :icon="['fab', 'linkedin']" />
-            <a href="https://www.linkedin.com/company/mlm-metal-eng-llc" target="_blank">/mlm-metal-eng-llc</a>
+            <a href="https://www.linkedin.com/company/mlm-metal-eng-llc" target="_blank">
+                <font-awesome-icon :icon="['fab', 'linkedin']" />
+                <p class="hidden sm:inline"> /mlm-metal-eng-llc</p>
+            </a>
         </div>
     </div>
     <Navbar />

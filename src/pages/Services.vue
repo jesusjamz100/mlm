@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <p class="text-3xl pb-5 pt-10 font-semibold text-center">Our Services</p>
-    <div class="w-full flex justify-center px-20">
+    <div class="w-full flex justify-center px-5 md:px-20">
         <div class="flex flex-col gap-5 justify-center p-5 max-w-4xl place-self-center text-justify">
             <p class="text-2xl font-semibold pb-2">Tool & Die Design</p>
             <p class="text-xl pb-2">We have extensive experience in Die Design and Die Engineering. We have expertise in designing sheet metal parts and assembly as per functional requirements. We have designed tools in the following categories:</p>
@@ -41,7 +41,7 @@ export default {
             <p class="text-2xl font-semibold pb-2">Product Engineering</p>
             <p class="text-xl pb-5">We have expertise in designing sheet metal parts and assembly as per functional requirements.</p>
         </div>
-        <div class="flex flex-col max-w-96 p-5">
+        <div class="sm:flex flex-col max-w-96 p-5 hidden">
             <img src="../../public/TOOL&DIE-DESIGN-01.png" alt="" class="drop-shadow-xl">
             <img src="../../public/TOOL&DIE-DESIGN-03.png" alt="" class="drop-shadow-xl">
             <img src="../../public/TOOL&DIE-DESIGN-04.png" alt="" class="drop-shadow-xl">

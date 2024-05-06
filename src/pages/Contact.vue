@@ -22,6 +22,7 @@ const handleSubmit = async e => {
     if ([firstName.value, lastName.value, email.value, message.value].includes('')) {
         alert.value = { msg: 'All fields are required', error: true }
         setTimeout(() => alert.value = {}, 3000);
+        return;
     }
 
     const formData = {
@@ -42,7 +43,8 @@ const handleSubmit = async e => {
         alert.value = { msg: 'Message sent!' };
         setTimeout(() => alert.value = {}, 3000)
     } catch (error) {
-        console.log(error)
+        console.log(error);
+        return;
     }
 
     handleReset();
@@ -54,7 +56,7 @@ const handleSubmit = async e => {
 <template>
     <p class="text-3xl pb-5 pt-10 font-semibold text-center">Contact Us</p>
     <div class="flex justify-center w-full pb-10 pt-5">
-        <div class="flex justify-center gap-16 p-10 rounded-md bg-white shadow-lg min-w-[60%]">
+        <div class="flex flex-col lg:flex-row justify-center gap-8 sm:gap-16 p-10 rounded-md bg-white shadow-lg min-w-[60%]">
             <div class="flex flex-col min-w-fit gap-5">
                 <p class="text-xl"><font-awesome-icon :icon="['fas', 'phone']" /> +58 (414) 425-6603</p>
                 <p class="text-xl"><font-awesome-icon :icon="['fas', 'envelope']" /> contact@mlmetaleng.com</p>
@@ -83,4 +85,4 @@ const handleSubmit = async e => {
             </div>
         </div>
     </div>
-</template>../assets/smtp/smtp.js
+</template>
