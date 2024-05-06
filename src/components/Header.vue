@@ -11,7 +11,7 @@ library.add(faEnvelope, faLinkedin, faFacebook)
 <template>
     <div class="w-full flex justify-center bg-blue-900 px-8 py-1 gap-5">
         <div class="flex gap-2 items-center text-white text-lg">
-            <a href="mailto:info@mlmetaleng.com" >
+            <a href="mailto:contact@mlmetaleng.com" >
                 <font-awesome-icon :icon="['fas', 'envelope']" />
                 <p class="hidden sm:inline"> contact@mlmetaleng.com</p>
             </a>
