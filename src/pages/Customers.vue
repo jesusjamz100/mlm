@@ -22,6 +22,6 @@ export default {
         </div>
     </div>
     <div class="flex flex-wrap w-full justify-center gap-20 py-10">
-        <img v-for="(item, index) in images" :key="index" :src="'../../public/'+item" :alt="item" class="w-auto max-h-28">
+        <img v-for="(item, index) in images" :key="index" :src="item" :alt="item" class="w-auto max-h-28">
     </div>
 </template>
